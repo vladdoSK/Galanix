@@ -1,0 +1,205 @@
+body, h1{
+  margin: 0 auto;
+  font-family: 'El Messiri', sans-serif;
+}
+
+.wrapper{
+  width: 80%;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(rgb(77, 85, 231), rgb(234, 234, 168));
+}
+
+.header_time{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  font-size: 65px;
+  padding-bottom: 20px;
+}
+
+.app{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: scale(0);
+  z-index: 3;
+}
+
+.modal.active {
+  transform: scale(1);
+}
+
+.modal_content {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock, .element_number{
+  text-align: center;
+}
+
+.button {
+  color: #1d09b7;
+  cursor: pointer;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  width: 300px;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px 250px;
+  display: block;
+  background-image: linear-gradient(to left, transparent, transparent 50%, #3209b7 50%, #b4ad29);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  font: bold 18px tahoma;
+  border: 1px solid #a909b7;
+
+}
+
+.button:hover {
+  background-position: 0 0;
+  color: #fff;
+}
+
+.data_time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2{
+  margin: 10px 0 10px 0;
+}
+
+.circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6, .circle_7, .circle_8, .circle_9, .circle_10,  .circle_11,.circle_12{
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  box-sizing: border-box;
+  border:5px solid rgb(55, 54, 54);
+  cursor: pointer;
+  transition: .5s;
+}
+
+.circle_1:hover, .circle_2:hover, .circle_3:hover, .circle_4:hover, .circle_5:hover, .circle_6:hover, 
+.circle_7:hover, .circle_8:hover, .circle_9:hover, .circle_10:hover,  .circle_11:hover,.circle_12:hover{
+  border:5px solid yellow;
+  transform: rotate(45deg);
+  transition: .5s;
+}
+
+
+@media (max-width:1200px) {
+    .img_all_size{
+      width: 500px;
+    }
+}
+
+@media (max-width:700px) {
+  .img_all_size{
+      width: 500px;
+  }
+}
+
+@media (max-width:550px) {
+  .img_all_size{
+    width: 200px;
+  }
+}
+
+
+@media(min-width:1850px) and (max-width:2100px)
+{
+  .circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6, .circle_7, .circle_8, .circle_9, .circle_10,  .circle_11, .circle_12{
+      width: 250px;
+      height: 250px;
+  }
+}
+
+@media (max-width:1850px) {
+  .circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6, .circle_7, .circle_8, .circle_9, .circle_10,  .circle_11, .circle_12{
+      width: 200px;
+      height: 200px;
+  }
+
+  .header_time{
+    font-size: 30px;
+  }
+}
+
+@media (max-width:1500px) {
+  .circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6, .circle_7, .circle_8, .circle_9, .circle_10,  .circle_11, .circle_12{
+      margin: 40px;
+  }
+}
+
+@media (max-width:1400px) {
+  .circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6, .circle_7, .circle_8, .circle_9, .circle_10,  .circle_11, .circle_12{
+      width: 170px;
+      height: 170px;
+  }
+}
+
+@media (max-width:350px) {
+  .circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6, .circle_7, .circle_8, .circle_9, .circle_10,  .circle_11, .circle_12{
+      margin: 40px 0px 40px 0px;
+  }
+}
+
+@media (max-width:1250px){
+  .circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6, .circle_7, .circle_8, .circle_9, .circle_10,  .circle_11, .circle_12{
+    margin: 20px;
+  }
+}
+
+@media (min-width:1050px)
+{
+  .circle_1,.circle_5, .circle_9{
+      border: 5px solid rgb(251, 4, 4);
+  }
+}
+
+@media (max-width:1050px) and (min-width:788px)
+{
+  .circle_1,.circle_4, .circle_7, .circle_10{
+      border: 5px solid rgb(251, 4, 4);
+  }
+}
+
+@media (max-width:787px)
+{
+  .circle_1,.circle_3, .circle_5, .circle_7, .circle_9, .circle_11{
+      border: 5px solid rgb(251, 4, 4);
+  }
+}
+
+@media (max-width:525px)
+{
+  .circle_1, .circle_2, .circle_3, .circle_4, .circle_5, .circle_6, .circle_7, .circle_8, .circle_9, .circle_10,  .circle_11,.circle_12{
+      border: 5px solid rgb(251, 4, 4);
+  }
+}

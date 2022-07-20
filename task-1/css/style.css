@@ -1,0 +1,92 @@
+.body{
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flag{
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    margin: 25px 0 25px 0;
+    box-shadow: 2px 4px 5px 4px rgb(114, 111, 111);
+}
+
+.flag--ukr{
+    background: linear-gradient(to bottom, blue 50%, yellow 50%);
+}
+
+.flag--japan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circum{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: red;
+}
+
+.flag--iceland{
+    background: red;
+    position: relative;
+}
+
+.square{
+    background: blue;
+    height: 75px;
+}
+
+.square--square_1{
+    width: 75px;
+    border-bottom: 10px solid white;
+    border-right: 10px solid white;
+}
+
+.square--square_2{
+    width: 75px;
+    position: absolute;
+    bottom: 0;
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+}
+
+
+.square--square_3{
+    width: 175px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-bottom: 10px solid white;
+    border-left: 10px solid white;
+}
+
+.square--square_4{
+    width: 175px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top: 10px solid white;
+    border-left: 10px solid white;
+}
+
+.flag--czech{
+    background: linear-gradient(to bottom, white 50%, red 50%);
+}
+
+.flag--czech::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 100px solid transparent;
+    border-left: 150px solid #0000ff;
+    border-bottom: 100px solid transparent;
+}
